@@ -1,0 +1,99 @@
+/* HTML Reset */
+html {
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: gainsboro;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+/* --------------------------- */
+/* Tool Styling */
+
+.config{
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, .25);
+  flex-wrap: wrap;
+}
+
+.primary-heading{
+  margin: 0;
+}
+
+.config > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 8px;
+  border-right: 1px solid gainsboro;
+  height: 45px;
+}
+
+.config > div > * {
+  height: 28px;
+}
+
+button {
+  margin: 0 4px;
+  border: none;
+  background: none;
+  transition: border .3s ease-in;
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-color: gainsboro;
+}
+
+button:hover{
+  border-bottom: 3px solid #73aa24;
+  cursor: pointer;
+}
+
+button.--active{
+  border-bottom: 3px solid #73aa24;
+}
+
+input {
+  margin: 0 16px 0 8px;
+}
+
+.style__color-label{
+  display: flex;
+  align-items: center;
+}
+
+.style__rainbow-mode:hover{
+  border-image-source: linear-gradient(to left, #743ad5,#d53a9d);
+}
+
+.author-msg{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+}
+
+/* --------------------------- */
+.canvas-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.draw-space {
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, .25), -4px -4px 8px 2px rgba(0, 0, 0, .25);
+  background-color: whitesmoke;
+}
