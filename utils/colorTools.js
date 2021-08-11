@@ -12,6 +12,14 @@ function hexToRgba(hex) {
   }
 }
 
+function rgbToHex(r,g,b) {
+  function componentToHex(c) {
+    let hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+  }
+  return `#${componentToHex(r)}${componentToHex(g)}${componentToHex(b)}`
+}
+
 function extractRgbaObj(rgbStr) {
   let separatedVals = rgbStr.split(/,|\(|\)/);
   return {
